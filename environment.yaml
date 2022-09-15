@@ -1,4 +1,4 @@
-name: dhsis
+name: uSDN
 channels:
   - default
   - conda-forge
