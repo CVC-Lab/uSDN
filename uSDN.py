@@ -4,6 +4,7 @@ from pbAuto_uSDN import*
 import time
 import os
 import argparse
+import pdb
 
 parser = argparse.ArgumentParser(description='uSDN for HSI-SR')
 parser.add_argument('--cuda', default='0', help='Choose GPU.')
@@ -47,6 +48,14 @@ def main():
     print('image pair '+str(args.filenum) + ' is processing')
 
     data = readData(file_content, num)
+    # pdb.set_trace()
+    '''
+    data:
+    ['hyperLR', 'multiHR', 'hyperHR',
+    'dimLR', 'dimHR', 'srf','srfactor',
+    'colLR','meanLR', 'reducedLR',
+    'sphere','num']
+    '''
 
     # betapan(input data,rate for LR HSI, rate for HR MSI,
     # lr network level, hr network level

@@ -1,0 +1,10 @@
+name: dhsis
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python=3.5.1
+  - scipy
+  - tensorflow=1.8.0
+  - pip
+ 
